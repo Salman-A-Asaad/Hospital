@@ -130,6 +130,14 @@ function allFunction() {
         showFooter();
     };
 }
+$(".facility").magnificPopup({
+    delegate: "a",
+    type: "image",
+    gallery: {
+        enabled: true
+    }
+});
+
 // Set event
 bar.addEventListener("click", showList);
 window.addEventListener("load", allFunction);
